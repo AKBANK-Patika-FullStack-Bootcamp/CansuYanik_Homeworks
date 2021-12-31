@@ -10,7 +10,7 @@ In this week, A Web API is designed that performs CRUD operations using HTTP met
 
 -----------------------------------------------------
 
-In this assignment, I designed a web api called <b> Meetcat </b>, which is a social dating platform for cats. This web service is a Restful service. It contains CRUD operations.
+In this assignment, I designed a web api called <b> Meetcat</b>, which is a social dating platform for cats. This web service is a Restful service. It contains CRUD operations.
 
 ### CRUD Operations
 
@@ -18,3 +18,5 @@ In this assignment, I designed a web api called <b> Meetcat </b>, which is a soc
 - <b> Read: </b> corresponds to Http verb <b> GET </b>
 - <b> Update: </b> corresponds to Http verb <b> PUT </b>
 - <b> Delete: </b> corresponds to Http verb <b> DELETE </b>
+
+You can take a look at the Http requests and the server responses => [Postman Screenshots](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/tree/main/Week2/Postman%20Screenshots) or [Swagger UI Screenshots](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/tree/main/Week2/Swagger%20UI%20Screenshots)
