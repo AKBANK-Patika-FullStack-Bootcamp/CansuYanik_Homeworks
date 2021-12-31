@@ -39,7 +39,7 @@ There is no such id in the list to update.
 
 <h3> Get New Profile after Post and Put Methods </h3> 
 
-![getpostput](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week2/Swagger%20UI%20Screenshots/get_method_after_post_and_put.PNG)
+![getpostput](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week2/Swagger%20UI%20Screenshots/get_method_after_Post_and_Put.PNG)
 
 -------------------------------------------
 
@@ -52,4 +52,4 @@ There is no such id in the list to update.
 <h3> Delete Method With Error </h3> 
 
 There is no such id in the list to delete.
-![deleteerr](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week2/Swagger%20UI%20Screenshots/delete_method_withError.PNG)
+![deleteerr](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week2/Swagger%20UI%20Screenshots/delete_withError.PNG)
