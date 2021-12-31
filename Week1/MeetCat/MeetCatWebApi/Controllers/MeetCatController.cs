@@ -43,9 +43,18 @@ namespace MeetCatWebApi.AddControllers
         [HttpGet]
         public List<Cat> GetCats()
         {   
-            /*sort cat profiles according to catId then convert to list type*/
+            /*sort cat profiles according to their catIds then convert to list type*/
             var catList = CatProfileList.OrderBy(cat => cat.catId).ToList<Cat>();
             return catList;
+        }
+
+        /*get id from route*/
+        //api/MeetCat/{id}
+        [HttpGet("{id}")]
+        public Cat GetById(int id)
+        {   
+            var cat = CatProfileList.Where(cat => cat.catId == id).SingleOrDefault();
+            return cat;
         }
 
         /*get name from route*/
@@ -58,15 +67,6 @@ namespace MeetCatWebApi.AddControllers
             return cat;
         }
         */
-
-        /*get id from route*/
-        //api/MeetCat/{id}
-        [HttpGet("{id}")]
-        public Cat GetById(int id)
-        {   
-            var cat = CatProfileList.Where(cat => cat.catId == id).SingleOrDefault();
-            return cat;
-        }
 
         /*get id from query*/ 
         //api/MeetCat?{name}
@@ -87,14 +87,14 @@ namespace MeetCatWebApi.AddControllers
             /*If there is no same id in list, add new profile*/
             var cat = CatProfileList.SingleOrDefault(cat => cat.catId == newProfile.catId);
             if(cat is not null){
-                result.HttpStatusCode = BadRequest().StatusCode;
+                result.HttpStatusCode = BadRequest().StatusCode; //error code
                 result.Message = "Cat with " + cat.catId + " id already exists." ;
                 return result;
             }
                  
             CatProfileList.Add(newProfile);
 
-            result.HttpStatusCode = Ok().StatusCode;
+            result.HttpStatusCode = Ok().StatusCode; //Successfully added.
             result.Message = "New cat profile is added." ;
             return result;
         }
@@ -104,10 +104,10 @@ namespace MeetCatWebApi.AddControllers
         public Result UpdateProfile(int id, [FromBody] Cat updatedProfile)
         {   
             Result result = new Result();
-            /*If there is desired profile in list, update*/
+            /*If desired profile is found from list, update it*/
             var cat = CatProfileList.SingleOrDefault(cat => cat.catId == id);
             if(cat is null){
-                result.HttpStatusCode = BadRequest().StatusCode;
+                result.HttpStatusCode = BadRequest().StatusCode; //error code
                 result.Message = "There is no cat with " + id + " id." ;
                 return result;    
             }
@@ -118,7 +118,7 @@ namespace MeetCatWebApi.AddControllers
             cat.genderId = updatedProfile.genderId != default ? updatedProfile.genderId : cat.genderId;
             cat.birth = updatedProfile.birth != default ? updatedProfile.birth : cat.birth;
 
-            result.HttpStatusCode = Ok().StatusCode;
+            result.HttpStatusCode = Ok().StatusCode; //Successfully updated.
             result.Message = "Cat with " + cat.catId + " is updated." ;
             return result;
         }
@@ -128,17 +128,17 @@ namespace MeetCatWebApi.AddControllers
         public Result DeleteProfile(int id)
         {   
             Result result = new Result();
-            /*If there is desired profile in list, delete*/
+            /*If desired profile is found from list, delete it*/
             var cat = CatProfileList.SingleOrDefault(cat => cat.catId == id);
             if(cat is null){
-                result.HttpStatusCode = BadRequest().StatusCode;
+                result.HttpStatusCode = BadRequest().StatusCode; //error code
                 result.Message = "There is no cat with " + id + " id." ;
                 return result;
             }
             
-            CatProfileList.Remove(cat);
+            CatProfileList.Remove(cat); //deletion
 
-            result.HttpStatusCode = Ok().StatusCode;
+            result.HttpStatusCode = Ok().StatusCode; //Successfully deleted
             result.Message = "Cat with " + cat.catId + " id is deleted." ;
             return result;
         }

@@ -10,7 +10,7 @@ namespace MeetCatWebApi{
 
         public string breed { get; set; }
 
-        public int genderId { get; set; } /*1:male, 2: female*/
+        public int genderId { get; set; } /*1: male, 2: female*/
 
         public DateTime birth { get; set; }
 
