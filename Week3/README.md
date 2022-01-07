@@ -1,10 +1,14 @@
-In this week, The task given this week is to create a database for our project and create a table for the log and model. In addition, it is asked to load the .bak extension file of the database we created in SQL.
+## Week 3
+
+In this week, The task given this week is to create a database for our project and create a table for the log and models. In addition, it is asked to load the .bak extension file of the database we created in SQL.
 
 <h3>All tables created</h3>
 
 You can see the database and tables inside the db.
 
-![tables](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/tables.PNG)
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/tables.PNG" />
+</p>
 
 -------------------------------------------
 
@@ -31,23 +35,31 @@ GO
 
 <h3> Insert an Entry & Show Table </h3> 
 
-![insertion](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insertion.PNG)
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insertion.PNG" />
+</p>
 
 -------------------------------------------
 
 <h3> Insert & Update an Entry </h3> 
 
-
-![ia](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insert_update.PNG)
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insert_update.PNG" />
+</p>
 
 -------------------------------------------
 
-<h3> Delete an Entry </h3> 
+<h3> Delete an Entry </h3>
 
-![d](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/table.PNG)
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/table.PNG" />
+</p>
+
 
 -------------------------------------------
 
 <h3> To Connect Two Tables with Foreign Key</h3> 
 
-![d](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/join.PNG)
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/join.PNG" />
+</p>
