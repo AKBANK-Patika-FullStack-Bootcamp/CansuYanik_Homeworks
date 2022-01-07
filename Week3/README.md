@@ -35,13 +35,37 @@ GO
 
 <h3> Insert an Entry & Show Table </h3> 
 
+```
+INSERT INTO [dbo].[Cats]
+           ([userName]
+           ,[breed]
+           ,[genderId]
+           ,[bith])
+     VALUES
+           (<userName, nvarchar(50),>
+           ,<breed, nvarchar(50),>
+           ,<genderId, int,>
+           ,<bith, datetime,>)
+GO
+```
+
 <p align="center">
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insertion.PNG" />
 </p>
 
 -------------------------------------------
 
-<h3> Insert & Update an Entry </h3> 
+<h3> Insert & Update an Entry </h3>
+
+```
+UPDATE [dbo].[Cats]
+   SET [userName] = <userName, nvarchar(50),>
+      ,[breed] = <breed, nvarchar(50),>
+      ,[genderId] = <genderId, int,>
+      ,[bith] = <bith, datetime,>
+ WHERE <Search Conditions,,>
+GO
+```
 
 <p align="center">
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insert_update.PNG" />
@@ -50,6 +74,12 @@ GO
 -------------------------------------------
 
 <h3> Delete an Entry </h3>
+
+```
+DELETE FROM [dbo].[Cats]
+      WHERE <Search Conditions,,>
+GO
+```
 
 <p align="center">
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/table.PNG" />
