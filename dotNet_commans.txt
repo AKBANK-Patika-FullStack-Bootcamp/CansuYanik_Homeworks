@@ -1,0 +1,17 @@
+##Some useful commands
+
+###Create project
+
+mkdir <project name>
+cd <project name>
+dotnet new webapi -n <webapi name (e.g: WebApi)> 
+
+###Create solution file
+dotnet new sln -n <sln file name (e.g: BookStoreSln)>
+
+###Connect solution to webapi
+dotnet sln add <web api name>
+
+###Run the project
+cd <webapi name>
+dotnet watch run
