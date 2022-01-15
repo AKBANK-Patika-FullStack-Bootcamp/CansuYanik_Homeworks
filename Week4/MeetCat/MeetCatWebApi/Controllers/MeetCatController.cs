@@ -19,7 +19,7 @@ namespace MeetCatWebApi.AddControllers
         List<Cat> CatProfileList = new List<Cat>();
 
         //db connection
-        DBOperations DbOpp = new DBOperations();
+        DBOperations dbOperation = new DBOperations();
 
 
         /*HTTP get request methods*/
@@ -28,38 +28,64 @@ namespace MeetCatWebApi.AddControllers
         {
             /*sort cat profiles according to their catIds then convert to list type*/
             logger.createLog("Get operation: Cat list is fetched."); 
-            return DbOpp.GetCatUser();
+            return dbOperation.GetCatUser();
         }
 
         /*get id from route*/
         //api/MeetCat/{id}
         [HttpGet("{id}")]
         public Cat GetById(int id)
-        {   
-            var cat = CatProfileList.Where(cat => cat.catId == id).SingleOrDefault();
-            logger.createLog("GetById operation: Cat with " + cat.catId + " is fetched.");
-            return cat;
+        {
+            //fetch the whole list from db
+            List<Cat> userList = dbOperation.GetCatUser();
+
+            Cat? resultObject = new Cat();
+            resultObject = userList.Find(x => x.catId == id);
+            if (resultObject == null)
+                logger.createLog("Error GetById operation: There is no cat with " + id + " id");
+            else
+                logger.createLog("Success GetById operation: Cat with " + resultObject.catId + " is fetched.");
+            return resultObject;
         }
 
         /*HTTP post request method*/
         [HttpPost]
         public Result AddProfile([FromBody] Cat newProfile)
-        {   
-            Result result = new Result();
-            /*If there is no same id in list, add new profile*/
-            var cat = CatProfileList.SingleOrDefault(cat => cat.catId == newProfile.catId);
-            if(cat is not null){
-                result.HttpStatusCode = BadRequest().StatusCode; //error code
-                result.Message = "Cat with " + cat.catId + " id already exists." ;
-                logger.createLog("Error add operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
-                return result;
-            }
-                 
-            CatProfileList.Add(newProfile);
+        {
 
-            result.HttpStatusCode = Ok().StatusCode; //Successfully added.
-            result.Message = "New cat with " + newProfile.catId + " id is added." ;
-            logger.createLog("Success add operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
+            Cat usr = dbOperation.FindCat(newProfile.userName);
+            
+            /*new profile is in the list already?*/
+            bool userCheck = (usr != null) ? true : false;
+
+            Result result = new Result();
+
+            if (userCheck == false)
+            {
+                
+                if (dbOperation.AddModel(newProfile) == true)
+                {
+                    /*If there is no same id in list, add new profile*/
+                    result.HttpStatusCode = Ok().StatusCode; //Successfully added.
+                    result.Message = "New cat with " + newProfile.catId + " id is added.";
+                    logger.createLog("Success add operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
+                }
+                else
+                {
+                    /*If there is an error while adding*/
+                    result.HttpStatusCode = BadRequest().StatusCode; //error code
+                    result.Message = "Cat with " + newProfile.catId + " id cannot added.";
+                    logger.createLog("Error add operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
+                }
+
+            }
+            else
+            {
+                /*If this cat user already exists*/
+                result.HttpStatusCode = BadRequest().StatusCode; //error code
+                result.Message = "Cat with " + newProfile.catId + " id already exists.";
+            }
+            
             return result;
         }
 
@@ -68,24 +94,28 @@ namespace MeetCatWebApi.AddControllers
         public Result UpdateProfile(int id, [FromBody] Cat updatedProfile)
         {   
             Result result = new Result();
-            /*If desired profile is found from list, update it*/
-            var cat = CatProfileList.SingleOrDefault(cat => cat.catId == id);
-            if(cat is null){
-                result.HttpStatusCode = BadRequest().StatusCode; //error code
-                result.Message = "There is no cat with " + id + " id." ;
-                logger.createLog("Error update operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
-                return result;    
-            }
-            
-            /*If not default value, update*/
-            cat.userName = updatedProfile.userName != default ? updatedProfile.userName : cat.userName;
-            cat.breed = updatedProfile.breed != default ? updatedProfile.breed : cat.breed;
-            cat.genderId = updatedProfile.genderId != default ? updatedProfile.genderId : cat.genderId;
-            cat.birth = updatedProfile.birth != default ? updatedProfile.birth : cat.birth;
 
-            result.HttpStatusCode = Ok().StatusCode; //Successfully updated.
-            result.Message = "Cat with " + cat.catId + " is updated." ;
-            logger.createLog("Success update operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
+            //fetch the whole list from db
+            List<Cat> userList = dbOperation.GetCatUser();
+
+            //User Cat updated operation
+            /*If desired profile is found from list, update it*/
+            Cat? _oldValue = userList.Find(o => o.catId == id);
+            if (_oldValue != null)
+            {
+                dbOperation.DeleteModel(id);
+                dbOperation.AddModel(updatedProfile);
+
+                result.HttpStatusCode = Ok().StatusCode; //Successfully updated.
+                result.Message = "Cat with " + updatedProfile.catId + " is updated.";
+                logger.createLog("Success update operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
+            }
+            else
+            {
+                result.HttpStatusCode = BadRequest().StatusCode; //error code
+                result.Message = "There is no cat with " + id + " id.";
+                logger.createLog("Error update operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
+            }
             return result;
         }
 
@@ -94,21 +124,21 @@ namespace MeetCatWebApi.AddControllers
         public Result DeleteProfile(int id)
         {   
             Result result = new Result();
+
             /*If desired profile is found from list, delete it*/
-            var cat = CatProfileList.SingleOrDefault(cat => cat.catId == id);
-            if(cat is null){
-                result.HttpStatusCode = BadRequest().StatusCode; //error code
-                result.Message = "There is no cat with " + id + " id." ;
-                logger.createLog("Error deletion operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
-                return result;
+            if (dbOperation.DeleteModel(id))
+            {
+                result.HttpStatusCode = Ok().StatusCode; //Successfully deleted
+                result.Message = "Cat with " + id + " id is deleted.";
+
+                logger.createLog("Success deletion operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
             }
-            
-            CatProfileList.Remove(cat); //deletion
-
-            result.HttpStatusCode = Ok().StatusCode; //Successfully deleted
-            result.Message = "Cat with " + cat.catId + " id is deleted." ;
-
-            logger.createLog("Success deletion operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
+            else
+            {
+                result.HttpStatusCode = BadRequest().StatusCode; //error code
+                result.Message = "There is no cat with " + id + " id.";
+                logger.createLog("Error deletion operation: " + result.Message + "\tStatus Code: " + result.HttpStatusCode);
+            }
             return result;
         }
     }

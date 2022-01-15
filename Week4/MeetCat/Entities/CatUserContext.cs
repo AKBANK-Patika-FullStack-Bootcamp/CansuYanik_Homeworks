@@ -23,7 +23,7 @@ namespace EFLibCore
             options.UseSqlServer("Server=DESKTOP-CST55KG\\SQLEXPRESS; Database = MeetCatDB; integrated security = True;");
         }
 
-        public DbSet<Cat> CatUser { get; set; }
+        public DbSet<Cat> Cat { get; set; }
 
         public DbSet<Gender> Gender { get; set; }
 
