@@ -29,6 +29,13 @@ Cat list is fetched from database.
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/get.PNG" />
 </p>
 
+Initial table from the database
+
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/table.PNG" />
+</p>
+
+
 -------------------------------------------
 
 <h3>2. GetById Method</h3> 
@@ -41,7 +48,23 @@ A cat is fetched from database.
 
 -------------------------------------------
 
-<h3>4. Error Post Operation </h3>
+<h3>4. Post Operation </h3>
+
+New cat profile is added. Id of the cat is incremented automatically.
+
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterAdd.PNG" />
+</p>
+
+New cat is added into database successfully.
+
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterAddTable.PNG" />
+</p>
+
+-------------------------------------------
+
+<h4>Error Post Operation </h4>
 
 The cat is already exists.
 
@@ -51,7 +74,30 @@ The cat is already exists.
 
 -------------------------------------------
 
+<h3>5. Put Operation </h3>
+
+A cat profile is updated.
+
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/put.PNG" />
+</p>
+
+Database after successful put operation
+
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterPut.PNG" />
+</p>
+
+-------------------------------------------
+
 <h3>5. Delete an Entry </h3>
+
+A cat profile is deleted.
+
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/delete.PNG" />
+</p>
+
 Database after success delete operation
 
 <p align="center">
