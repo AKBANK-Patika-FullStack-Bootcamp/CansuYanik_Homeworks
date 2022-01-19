@@ -20,7 +20,7 @@ namespace MeetCatWebApi.Controllers
             catch (Exception exc)
             {
                 //logger.createLog("Error add operation: " + exc.Message + "\tStatus Code: " + BadRequest().StatusCode);
-                
+                Exception x = exc;
                 return false;
             }
         }

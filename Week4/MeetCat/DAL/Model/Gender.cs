@@ -8,6 +8,7 @@ namespace DAL.Model
 {
     public class Gender
     {
+        [System.ComponentModel.DataAnnotations.Key]
         public int genderId { get; set; }
 
         public string gender { get; set; }

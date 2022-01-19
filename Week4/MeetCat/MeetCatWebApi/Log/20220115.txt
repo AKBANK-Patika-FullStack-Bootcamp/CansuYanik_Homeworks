@@ -41,3 +41,5 @@
 4.	Success update operation: Cat with 2 is updated.	Status Code: 200	Time: 09:43:25
 1.	Get operation: Cat list is fetched.	Time: 09:57:55
 2.	Error add operation: Cat with 2 id cannot added.	Status Code: 400	Time: 09:58:32
+1.	Error update operation: There is no cat with 2 id.	Status Code: 400	Time: 10:36:23
+1.	Get operation: Cat list is fetched.	Time: 10:45:07
