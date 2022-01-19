@@ -85,7 +85,7 @@ A cat profile is updated.
 Database after successful put operation
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterPut.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterput.PNG" />
 </p>
 
 -------------------------------------------
