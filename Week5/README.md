@@ -18,7 +18,7 @@ In this week, The task given this week is to
 APIAuthority Table is created to save users for login operation. Initially, table is empty.
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/authTable.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/authTable.PNG" />
 </p>
 
 
@@ -29,13 +29,13 @@ APIAuthority Table is created to save users for login operation. Initially, tabl
 A user is created for login operation.
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/createLogin.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/createLogin.PNG" />
 </p>
 
 APIAuthority table after successful "create login" operation:
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/tableAftercreateLogin.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/tableAftercreateLogin.PNG" />
 </p>
 
 -------------------------------------------
@@ -45,19 +45,19 @@ APIAuthority table after successful "create login" operation:
 Before the login operation, "Bearer Token" option is selected from "Postman Authorization" section.
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/bearerTokenSelection.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/bearerTokenSelection.PNG" />
 </p>
 
 Token is created after a successful login operation.
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/tokenCreated.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/tokenCreated.PNG" />
 </p>
 
 If login operation is not successful (invalid operation), bad request and error message is sent.
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/invalid.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/invalid.PNG" />
 </p>
 
 -------------------------------------------
@@ -67,13 +67,13 @@ If login operation is not successful (invalid operation), bad request and error 
 GetCat request and unauthorized response:
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/noAuth.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/noAuth.PNG" />
 </p>
 
 Token is given to use Bearer Token Auth. Using Bearer Token Auth, response will be OK for GetCat operation.
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/getWithToken.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/getWithToken.PNG" />
 </p>
 
 -------------------------------------------
