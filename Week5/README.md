@@ -1,6 +1,6 @@
 ## Week 4
 
-In this week, The task given this week is adding user login operation, token generation and usage and paging operations in our project.
+The task given this week is adding user login operations, token generation and usage and paging operations in our project.
 
 ### What has been done:
 - Header is used for security and access operations. Header must be filled if we want to login into a website. Body is used for post operation(for dynamic data).
