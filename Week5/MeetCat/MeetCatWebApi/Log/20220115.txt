@@ -1,0 +1,45 @@
+1.	Get operation: Cat list is fetched.	Time: 21:01:56
+1.	Get operation: Cat list is fetched.	Time: 23:03:54
+1.	Get operation: Cat list is fetched.	Time: 23:08:35
+1.	Get operation: Cat list is fetched.	Time: 23:14:12
+1.	Get operation: Cat list is fetched.	Time: 23:16:12
+1.	Get operation: Cat list is fetched.	Time: 23:24:51
+1.	Get operation: Cat list is fetched.	Time: 23:27:50
+1.	Get operation: Cat list is fetched.	Time: 23:31:39
+1.	Get operation: Cat list is fetched.	Time: 23:33:17
+1.	Get operation: Cat list is fetched.	Time: 23:34:21
+1.	Get operation: Cat list is fetched.	Time: 23:37:46
+1.	Get operation: Cat list is fetched.	Time: 23:44:27
+1.	Get operation: Cat list is fetched.	Time: 23:48:18
+1.	Get operation: Cat list is fetched.	Time: 23:51:45
+1.	Get operation: Cat list is fetched.	Time: 23:55:09
+1.	Get operation: Cat list is fetched.	Time: 00:00:44
+1.	Get operation: Cat list is fetched.	Time: 00:21:03
+1.	Get operation: Cat list is fetched.	Time: 08:17:57
+1.	Get operation: Cat list is fetched.	Time: 08:34:50
+1.	Get operation: Cat list is fetched.	Time: 08:35:51
+1.	Get operation: Cat list is fetched.	Time: 08:38:27
+1.	Get operation: Cat list is fetched.	Time: 08:40:25
+1.	Error add operation: Cat with 4 id cannot added.	Status Code: 400	Time: 08:51:22
+2.	Get operation: Cat list is fetched.	Time: 08:51:37
+3.	Error add operation: Cat with 4 id cannot added.	Status Code: 400	Time: 08:52:41
+1.	Get operation: Cat list is fetched.	Time: 09:02:50
+2.	GetById operation: Cat with 1 is fetched.	Time: 09:02:59
+1.	Success GetById operation: Cat with 1 is fetched.	Time: 09:06:58
+2.	Error GetById operation: There is no cat with 4 id	Time: 09:07:02
+1.	Error add operation: Cat with 4 id cannot added.	Status Code: 400	Time: 09:09:53
+1.	Get operation: Cat list is fetched.	Time: 09:16:26
+2.	Success GetById operation: Cat with 2 is fetched.	Time: 09:16:39
+3.	Error add operation: Cat with 4 id cannot added.	Status Code: 400	Time: 09:17:49
+1.	Success update operation: Cat with 3 is updated.	Status Code: 200	Time: 09:30:37
+1.	Success update operation: Cat with 3 is updated.	Status Code: 200	Time: 09:34:00
+1.	Get operation: Cat list is fetched.	Time: 09:40:03
+2.	Success deletion operation: Cat with 3 id is deleted.	Status Code: 200	Time: 09:40:16
+1.	Get operation: Cat list is fetched.	Time: 09:42:47
+2.	Error update operation: There is no cat with 3 id.	Status Code: 400	Time: 09:43:08
+3.	Error update operation: There is no cat with 3 id.	Status Code: 400	Time: 09:43:18
+4.	Success update operation: Cat with 2 is updated.	Status Code: 200	Time: 09:43:25
+1.	Get operation: Cat list is fetched.	Time: 09:57:55
+2.	Error add operation: Cat with 2 id cannot added.	Status Code: 400	Time: 09:58:32
+1.	Error update operation: There is no cat with 2 id.	Status Code: 400	Time: 10:36:23
+1.	Get operation: Cat list is fetched.	Time: 10:45:07

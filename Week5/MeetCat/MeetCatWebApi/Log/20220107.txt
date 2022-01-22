@@ -1,0 +1,10 @@
+1.	Get operation: Cat list is fetched.	Time: 18:54:47
+2.	Success add operation: New cat with 4 id is added.	Status Code: 200	Time: 18:54:57
+3.	GetById operation: Cat with 2 is fetched.	Time: 18:55:17
+4.	Error deletion operation: There is no cat with 5 id.	Status Code: 400	Time: 18:55:24
+5.	Success deletion operation: Cat with 4 id is deleted.	Status Code: 200	Time: 18:55:30
+6.	Error add operation: Cat with 2 id already exists.	Status Code: 400	Time: 18:56:04
+7.	Success update operation: Cat with 3 is updated.	Status Code: 200	Time: 18:56:20
+8.	Error update operation: There is no cat with 5 id.	Status Code: 400	Time: 18:56:32
+9.	Get operation: Cat list is fetched.	Time: 18:56:44
+10.	Success deletion operation: Cat with 3 id is deleted.	Status Code: 200	Time: 18:57:38

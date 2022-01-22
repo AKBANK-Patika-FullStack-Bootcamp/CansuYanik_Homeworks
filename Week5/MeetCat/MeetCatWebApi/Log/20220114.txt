@@ -1,0 +1,2 @@
+1.	Get operation: Cat list is fetched.	Time: 18:22:23
+1.	Get operation: Cat list is fetched.	Time: 19:13:44
