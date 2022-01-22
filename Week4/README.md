@@ -111,10 +111,10 @@ Database after success delete operation
 
 Cat and Gender tables are merged and merged table is displayed when the get method is called.
 
-Cat Table
+Cat Table <br>
 <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/catTable.PNG" />
 
-Gender Table
+Gender Table <br>
 <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/genderTable.PNG" />
 
 Get Method after success join operation
