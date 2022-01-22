@@ -11,6 +11,7 @@ The task given this week is adding user login operations, token generation and u
 - JwtBearer, Swashbuckle.Filters libraries are added.
 - Select Bearer Token on Postman Authorization Section.
 - Create Token and use this token to be able to use GET HTTP method.
+- Paging operations are added to project.
 
 
 <h3>1. APIAuthority Table</h3>
@@ -29,21 +30,16 @@ A user is created for login operation.
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/createLogin.PNG" />
 </p>
 
-APIAuthority table after successful "create login" operation:
-
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/tableAftercreateLogin.PNG" />
-</p>
+APIAuthority table after successful "create login" operation: <br><br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/tableAftercreateLogin.PNG" />
 
 -------------------------------------------
 
 <h3>3. Login User </h3>
 
-Before the login operation, "Bearer Token" option is selected from "Postman Authorization" section.
+Before the login operation, "Bearer Token" option is selected from "Postman Authorization" section. <br><br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/bearerTokenSelection.PNG" />
 
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/bearerTokenSelection.PNG" />
-</p>
 
 Token is created after a successful login operation.
 
