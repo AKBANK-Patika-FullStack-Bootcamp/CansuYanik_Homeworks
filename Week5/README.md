@@ -55,7 +55,7 @@ If login operation is not successful (invalid operation), bad request and error 
 
 -------------------------------------------
 
-<h4>4. GetCat Request with Authontication </h4>
+<h3>4. GetCat Request with Authontication </h3>
 
 GetCat request and unauthorized response:
 
@@ -70,7 +70,7 @@ Token is given to use Bearer Token Auth. Using Bearer Token Auth, response will 
 </p>
 
 -------------------------------------------
-<h4>5. Paging</h4>
+<h3>5. Paging</h3>
 
 Get a portion of cat data
 
