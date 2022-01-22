@@ -4,11 +4,8 @@ The task given this week is to create a database for our project and create a ta
 
 <h3>1. All tables created</h3>
 
-You can see the database and tables inside the db.
-
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/tables.PNG" />
-</p>
+You can see the database and tables inside the db. <br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/tables.PNG" />
 
 -------------------------------------------
 
@@ -49,9 +46,8 @@ INSERT INTO [dbo].[Cats]
 GO
 ```
 
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insertion.PNG" />
-</p>
+<br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insertion.PNG" />
 
 -------------------------------------------
 
@@ -67,9 +63,8 @@ UPDATE [dbo].[Cats]
 GO
 ```
 
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insert_update.PNG" />
-</p>
+<br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/insert_update.PNG" />
 
 -------------------------------------------
 
@@ -81,14 +76,11 @@ DELETE FROM [dbo].[Cats]
 GO
 ```
 
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/table.PNG" />
-</p>
+<br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/table.PNG" />
 
 -------------------------------------------
 
 <h3>6. To Connect Two Tables with Foreign Key</h3> 
-
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/join.PNG" />
-</p>
+<br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week3/DB_Screenshots/join.PNG" />
