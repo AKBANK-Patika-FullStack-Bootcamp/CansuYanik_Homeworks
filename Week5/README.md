@@ -40,7 +40,7 @@ APIAuthority table after successful "create login" operation:
 
 -------------------------------------------
 
-<h3>4. Login User </h3>
+<h3>3. Login User </h3>
 
 Before the login operation, "Bearer Token" option is selected from "Postman Authorization" section.
 
@@ -62,7 +62,7 @@ If login operation is not successful (invalid operation), bad request and error 
 
 -------------------------------------------
 
-<h4>GetCat Request with Authontication </h4>
+<h4>4. GetCat Request with Authontication </h4>
 
 GetCat request and unauthorized response:
 
@@ -77,12 +77,12 @@ Token is given to use Bearer Token Auth. Using Bearer Token Auth, response will 
 </p>
 
 -------------------------------------------
-<h4>Paging Operation</h4>
+<h4>5. Paging</h4>
 
 Get a portion of cat data
 
 <p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/paging.PNG" />
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/paging.PNG" />
 </p>
 
 
