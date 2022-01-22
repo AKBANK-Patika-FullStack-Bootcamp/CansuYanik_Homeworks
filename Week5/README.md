@@ -15,7 +15,7 @@ The task given this week is adding user login operations, token generation and u
 
 <h3>1. APIAuthority Table</h3>
 
-APIAuthority Table is created to save users for login operation. Initially, table is empty. <br>
+APIAuthority Table is created to save users for login operation. Initially, table is empty. <br><br>
 <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week5/Screenshots/authTable.PNG" />
 
 
