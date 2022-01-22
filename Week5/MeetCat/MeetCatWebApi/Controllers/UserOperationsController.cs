@@ -6,6 +6,7 @@ using DAL.Model;
 using EFLibCore;
 using MeetCatWebApi.Controllers;
 using Microsoft.AspNetCore.Authorization;
+using MeetCatWebAPI;
 
 namespace MeetCatWebApi.AddControllers
 {
@@ -32,6 +33,25 @@ namespace MeetCatWebApi.AddControllers
             logger.createLog("Get operation: Cat list is fetched.");
             //return dbOperation.GetCatUser();
             return dbOperation.GetCatUserDetais();
+        }
+
+
+        [Authorize]
+        //Get customers in smaller chunks
+        [HttpGet("/UserOperations/GetCatPaging")]
+        public IActionResult GetCatsPaging([FromQuery] PagingParameters paging)
+        {
+
+            //paging.PageNumber = 0;
+            //paging.PageSize = 3;
+
+            var owners = dbOperation.GetCatUser()  //All cats from db
+           .Skip(paging.PageNumber) // From which record(page) , every page contains #"paging.pageSize" cats
+           .Take(paging.PageSize) // How many cats to display
+           .ToList();
+
+
+            return Ok(owners);
         }
 
 

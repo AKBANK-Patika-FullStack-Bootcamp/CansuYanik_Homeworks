@@ -77,5 +77,14 @@ Token is given to use Bearer Token Auth. Using Bearer Token Auth, response will 
 </p>
 
 -------------------------------------------
+<h4>Paging Operation</h4>
 
+Get a portion of cat data
+
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/paging.PNG" />
+</p>
+
+
+-------------------------------------------
 

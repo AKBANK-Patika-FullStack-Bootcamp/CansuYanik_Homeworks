@@ -1,28 +1,28 @@
 USE [MeetCatDB]
 GO
 
-INSERT INTO [dbo].[Genders]
+INSERT INTO [dbo].[Gender]
            ([gender])
      VALUES
            ('male'),
 		   ('female')
 GO
 
-SELECT * FROM Genders
+SELECT * FROM Gender
 GO
 
-INSERT INTO [dbo].[Cats]
+INSERT INTO [dbo].[Cat]
            ([userName]
            ,[breed]
            ,[genderId]
-           ,[bith])
+           ,[birth])
      VALUES
            ('Mia', 'Tabby', '2', '2019-07-01'),
 		   ('Lexa', 'Burmilla', '2', '2020-10-20'),
 		   ('Kajun', 'British Shorthair', '1', '2020-03-05')
 GO
 
-SELECT * FROM Cats
+SELECT * FROM Cat
 GO
 
 
