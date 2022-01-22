@@ -30,11 +30,8 @@ Cat list is fetched from database.
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/get.PNG" />
 </p>
 
-Initial table from the database
-
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/table.PNG" />
-</p>
+Initial table from the database <br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/table.PNG" />
 
 
 -------------------------------------------
@@ -57,11 +54,8 @@ New cat profile is added. Id of the cat is incremented automatically.
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterAdd.PNG" />
 </p>
 
-New cat is added into database successfully.
-
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterAddTable.PNG" />
-</p>
+New cat is added into database successfully. <br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterAddTable.PNG" />
 
 -------------------------------------------
 
@@ -83,11 +77,8 @@ A cat profile is updated.
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/put.PNG" />
 </p>
 
-Database after successful put operation
-
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterput.PNG" />
-</p>
+Database after successful put operation <br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterput.PNG" />
 
 -------------------------------------------
 
@@ -99,11 +90,8 @@ A cat profile is deleted.
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/delete.PNG" />
 </p>
 
-Database after success delete operation
-
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/success_delete.PNG" />
-</p>
+Database after success delete operation <br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/success_delete.PNG" />
 
 -------------------------------------------
 
@@ -117,10 +105,7 @@ Cat Table <br>
 Gender Table <br>
 <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/genderTable.PNG" />
 
-Get Method after success join operation
-
-<p align="center">
-  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterJoin.PNG" />
-</p>
+Get Method after success join operation <br>
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterJoin.PNG" />
 
 
