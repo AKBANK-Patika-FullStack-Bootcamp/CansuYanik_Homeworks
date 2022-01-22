@@ -24,11 +24,12 @@ namespace MeetCatWebApi.AddControllers
 
         /*HTTP get request methods*/
         [HttpGet]
-        public List<Cat> GetCats()
+        public List<CatDetail> GetCats()
         {
             /*sort cat profiles according to their catIds then convert to list type*/
-            logger.createLog("Get operation: Cat list is fetched."); 
-            return dbOperation.GetCatUser();
+            logger.createLog("Get operation: Cat list is fetched.");
+            //return dbOperation.GetCatUser();
+            return dbOperation.GetCatUserDetais();
         }
 
         /*get id from route*/

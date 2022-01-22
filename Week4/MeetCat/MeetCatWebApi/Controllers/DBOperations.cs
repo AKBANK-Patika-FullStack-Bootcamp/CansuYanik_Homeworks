@@ -32,6 +32,13 @@ namespace MeetCatWebApi.Controllers
             cats = _context.Cat.OrderBy(m => m.catId).ToList<Cat>();
             return cats;
         }
+		
+		public List<CatDetail> GetCatUserDetais()
+        {
+            //fetch all cat profiles from db
+            List<CatDetail> cats = InnerJoinExample().OrderBy(m => m.catId).ToList<CatDetail>();
+            return cats;
+        }
 
         public Cat FindCat(string UserName = "", int UserId = 0)
         {
@@ -58,6 +65,15 @@ namespace MeetCatWebApi.Controllers
                 //logger.createLog("HATA " + exc.Message);
                 return false;
             }
+        }
+		
+		public List<CatDetail> InnerJoinExample()
+        {
+            var user = _context.Cat.Join(_context.Gender, a => a.genderId,
+                  u => u.genderId,
+                 (user, gender) => new CatDetail { catId = user.catId, userName = user.userName, breed = user.breed, 
+                     gender = gender.gender, birth = user.birth }).ToList();
+            return user;
         }
     }
 }

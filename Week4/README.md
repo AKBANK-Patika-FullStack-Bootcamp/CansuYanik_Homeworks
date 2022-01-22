@@ -11,6 +11,7 @@ In this week, The task given this week is to create database connection with the
 - Generated gender and log classes (since there are tables in db)
 - Connection string added to appsettings file
 
+
 ```
 Ex:
 "ConnectionStrings": {
@@ -102,6 +103,24 @@ Database after success delete operation
 
 <p align="center">
   <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/success_delete.PNG" />
+</p>
+
+-------------------------------------------
+
+<h3>5. Inner Join Method </h3>
+
+Cat and Gender tables are merged and merged table is displayed when the get method is called.
+
+Cat Table
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/catTable.PNG" />
+
+Gender Table
+<img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/genderTable.PNG" />
+
+Get Method after success join operation
+
+<p align="center">
+  <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week4/Screenshots/afterJoin.PNG" />
 </p>
 
 
