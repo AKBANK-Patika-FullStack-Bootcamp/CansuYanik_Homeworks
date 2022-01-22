@@ -1,3 +1,5 @@
+## Week 2
+
 The task given in this week is running all functions of the created service on POSTMAN and adding screenshots of response and request information.
 I put postman screenshots here. You can also take a look at the [Swagger UI screenshots](https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/tree/main/Week2/Swagger%20UI%20Screenshots) if you want.
 
