@@ -1,6 +1,6 @@
 ## Week 3
 
-In this week, The task given this week is to create a database for our project and create a table for the log and models. In addition, it is asked to load the .bak extension file of the database we created in SQL.
+The task given this week is to create a database for our project and create a table for the log and models. In addition, it is asked to load the .bak extension file of the database we created in SQL.
 
 <h3>1. All tables created</h3>
 

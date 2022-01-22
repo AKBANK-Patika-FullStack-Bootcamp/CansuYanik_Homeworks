@@ -1,6 +1,6 @@
 ## Week 4
 
-In this week, The task given this week is to create database connection with the project and perform CRUD operations on the project using the Entity Framework Core library.
+The task given this week is to create database connection with the project and perform CRUD operations on the project using the Entity Framework Core library.
 
 ### What has been done:
 - Logger class and operation is added
