@@ -14,7 +14,7 @@ In this week, three task and a bonus task were given. For each task, learning an
 
 <h3>Part 1</h3>
 
-Define a dog object, create a "cleaning dog method", define a dog care time, import & export methods and variables, print dog and cleaning information<br><br>
+Define a dog object, create a "cleaning dog method", define a dog care time, import & export methods and variables, print dog and cleaning information.<br><br>
 <img src="https://github.com/AKBANK-Patika-FullStack-Bootcamp/CansuYanik_Homeworks/blob/main/Week6/Screenshots/part1.PNG" />
 
 <h3>Part 2</h3>
@@ -26,7 +26,7 @@ Define a custom summation operation, name this process as "girlsPowerSum".
 
 <h3>Part 3</h3>
 
-For this part, I wrote 7 different methods<br><br>
+For this part, I wrote 7 different methods.<br><br>
 
 <h5>Method 1: using inbuilt string methods</h5>
 
@@ -38,7 +38,7 @@ function method1(s) {
 
 Convert string to array, reverse array then join array items.
 Reverse() method needs to traverse array once, lets say its complexity is n (length of the string). When we add complexities of the other methods (split and join methods also takes n), it will take probably O(3n) time.
-Time complexity = O(3n), remove the constants so we can say O(n). 
+Time complexity will be O(3n), remove the constants so we can say O(n). 
 
 <h5>Method 2: using split, while (with 2 indexes) and join (optimed version of method1)</h5>
 
@@ -68,7 +68,7 @@ In total time complexity will be 0(2n+n/2), remove the constants so we can say O
 
 <h5>Method 3: using for loop</h5>
 
-```
+```javascript
 function method3(s) {
     let reversed = "";
 
@@ -84,7 +84,7 @@ Since we need the traverse string once, it takes O(n) time.
 
 <h5>Method 4: using for while loop (optimized version of method3)</h5>
 
-```
+```javascript
 function method4(s) {
 
     let reversed = "";
