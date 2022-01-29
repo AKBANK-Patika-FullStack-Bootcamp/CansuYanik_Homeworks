@@ -126,7 +126,7 @@ Time complexity O(logn).
 
 <h5>Method 6: using foreach</h5>
 
-```
+```javascript
 function method6(s) {
 
     let reversed = "";  
