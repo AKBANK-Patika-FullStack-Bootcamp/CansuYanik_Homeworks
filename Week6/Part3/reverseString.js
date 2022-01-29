@@ -46,7 +46,7 @@ function method3(s) {
 /*Method4: using for while loop (optimized version of method3)
 Find the middle char of string, One index starts from mid-1 to the beginning of the string, 
 other starts from mid+1 to the end. In each iteration concat them
-Since we starts from the middle of the array, time complexity will be O(n/2) (we can say O(n))*/
+Since we start from the middle of the array, time complexity will be O(n/2) (we can say O(n))*/
 function method4(s) {
 
     let reversed = "";
@@ -68,7 +68,7 @@ function method4(s) {
     return reversed;
 }
 
-/*Method4: using recursive call
+/*Method5: using recursive call
 In each call, middle of array is found, then subarrays are called and concatenated.
 Time complexity O(logn)*/
 function method5(s) {
