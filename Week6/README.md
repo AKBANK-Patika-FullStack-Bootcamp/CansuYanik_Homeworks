@@ -28,18 +28,21 @@ Define a custom summation operation, name this process as "girlsPowerSum".
 
 For this part, I wrote 7 different methods<br><br>
 
-<h6>Method 1: using inbuilt string methods</h6>
-```
+<h5>Method 1: using inbuilt string methods</h5>
+
+```javascript
 function method1(s) {
     return s.split('').reverse().join('');
 }
 ```
+
 Convert string to array, reverse array then join array items.
 Reverse() method needs to traverse array once, lets say its complexity is n (length of the string). When we add complexities of the other methods (split and join methods also takes n), it will take probably O(3n) time.
 Time complexity = O(3n), remove the constants so we can say O(n). 
 
-<h6>Method 2: using split, while (with 2 indexes) and join (optimed version of method1)</h6>
-```
+<h5>Method 2: using split, while (with 2 indexes) and join (optimed version of method1)</h5>
+
+```javascript
 function method2(s) {
 
     let sArray = s.split('');
@@ -58,11 +61,13 @@ function method2(s) {
     return sArray.join('');
 }
 ```
+
 In this method, I used split and join to be able to use array properties. In this method, I used 2 indexes. One starts from beginning, other starts from the end then swap them.
 Split and join take n times and since we only traverse array until the middle index, time complexity will be O(n/2) for while loop.
 In total time complexity will be 0(2n+n/2), remove the constants so we can say O(n). 
 
-<h6>Method 3: using for loop</h6>
+<h5>Method 3: using for loop</h5>
+
 ```
 function method3(s) {
     let reversed = "";
@@ -73,11 +78,12 @@ function method3(s) {
     return reversed;
 }
 ```
-Start from the beginning, in each iteration, concatenate chars like -> char + reversed
-(or start from the end, in each iteration, concatenate chars like -> reversed + char)
+
+Start from the beginning, in each iteration, concatenate chars like -> char + reversed (or start from the end, in each iteration, concatenate chars like -> reversed + char)
 Since we need the traverse string once, it takes O(n) time.
 
-<h6>Method 4: using for while loop (optimized version of method3)</h6>
+<h5>Method 4: using for while loop (optimized version of method3)</h5>
+
 ```
 function method4(s) {
 
@@ -100,11 +106,13 @@ function method4(s) {
     return reversed;
 }
 ```
-Find the middle char of the string, Use 2 indexes, one index starts from mid-1 to the beginning of the string, other starts from mid+1 to the end. In each iteration concatenate them.
+
+Find the middle char of the string, Use 2 indexes, one index starts from mid-1 to the beginning of the string, other starts from mid+1 to the end. In each iteration concatenate them. 
 Since we start from the middle of the array, time complexity will be O(n/2), remove the constants so we can say O(n). 
 
-<h6>Method 5: using recursive call</h6>
-```
+<h5>Method 5: using recursive call</h5>
+
+```javascript
 function method5(s) {
     if (s.length < 2)
       return s;
@@ -112,10 +120,12 @@ function method5(s) {
     return method5(s.substr(mid)) + method5(s.substr(0, mid));
 }
 ```
+
 In each call, middle of array is found, then subarrays are called and concatenated.
 Time complexity O(logn).
 
-<h6>Method 6: using foreach</h6>
+<h5>Method 6: using foreach</h5>
+
 ```
 function method6(s) {
 
@@ -126,10 +136,12 @@ function method6(s) {
     return reversed;
 }
 ```
+
 String is splitted in O(n) time and each item concanated. Total time complexity: O(2n), remove the constants so we can say O(n).
 
-<h6>Method 7: using reduce</h6>
-```
+<h5>Method 7: using reduce</h5>
+
+```javascript
 function method7(s){
 
     return s.split("").reduce(function(reversed, char){
@@ -137,9 +149,10 @@ function method7(s){
     }, "");
 } 
 ```
+
 String is splitted in O(n) time and each item concanated by using reduce method. Total time complexity: O(2n), remove the constants so we can say O(n).
 
-<h6>Conclusion</h6>
+<h5>Conclusion</h5>
 Generally, each methods have O(n) time. (n: length of the string). If we consider the constants, some methods have lower times, but they looks complex not simple. 
 For example method4 has lower time than method3 or method1, but it looks more complex because it has more lines than other methods.
 The best time complexity (O(logn)) belongs to method5. But method5 calls itself by recursively, each call is saved in a stack so we need extra stack space for it.
